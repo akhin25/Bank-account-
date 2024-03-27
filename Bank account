@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+class acc:
+    acno=0
+    def __init__(self):
+     acc.acno+=1
+     self.ac_no=acc.acno+1000
+     self.acholder=input("Account Holder:")
+     self.actype=input("Type :")
+     self.acbal=eval(input("Balance :"))
+     self.phone=eval(input("Phone number :"))
+    def dep(self):
+        self.acbal+=eval(input("Amount :"))
+    def withdraw(self):
+     self.acbal-=eval(input("Account :"))
+ 
+    def show(self):
+     print("\n\nAccount",self.acno,"\n\nHolder:",self.acholder,"\n\nBalance",self.acbal,"\n\nType",self.actype)
+dac=dict()
+while True:
+         print("1.Create")
+         print("2.Deopite")
+         print("3.Withdraw")
+         print("4.show")
+         print("5.exit")
+         ch=input("choice :")
+         if ch =='1':
+             a=acc()
+             dac[a.ac_no]=a
+         elif ch=='2':
+             dac[eval(input("Account:"))].dep()
+         elif ch=='3':
+             dac[eval(input("Account no:"))].withdraw()
+         elif ch=='4':
+             dac [eval(input("Ammount:"))].show()
+         elif ch=='5':
+          break
+         else:
+             print("invalid accnum")
+
+
+
+                 
+
+
+
+     
+ 
+ 
